@@ -6,6 +6,28 @@ import Notification from 'components/Notification';
 import Container from 'components/Container';
 
 const App = () => {
+  //------------------method--swithc-----------------------------------------------------------------
+  //   const [good, setStateGood] = useState(0)
+  //   const [neutral, setStateNeutral] = useState(0)
+  //   const [bad, setStateBad] = useState(0)
+
+  //   const handleIncrement = ({ target: { name } }) => {
+  //     switch (name) {
+  //       case 'good':
+  //         setStateGood(prev => prev + 1 );
+  //         break;
+  //       case 'neutral':
+  //         setStateNeutral(prev => prev + 1 );
+  //         break;
+  //       case 'bad':
+  //         setStateBad(prev => prev + 1 );
+  //         break;
+  //       default:
+  //         return;
+  //     }
+  //   }
+  // const objFeedback = {good, neutral, bad}
+  //------------------------------method--object--state------------------------------------
   const initionalState = {
     good: 0,
     neutral: 0,
@@ -31,6 +53,7 @@ const App = () => {
   const total = countTotalFeedback();
   const positivTotal = totalPositiv() ? totalPositiv() : 0;
   const keys = Object.keys(state);
+  // const keys = Object.keys(objFeedback);
 
   return (
     <Container>
