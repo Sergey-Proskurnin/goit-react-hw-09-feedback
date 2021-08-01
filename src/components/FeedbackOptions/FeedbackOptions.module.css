@@ -1,0 +1,24 @@
+.section {
+  margin-left: -20px;
+}
+
+.btn {
+  text-transform: capitalize;
+  margin-left: 20px;
+  cursor: pointer;
+  min-width: 100px;
+  border: none;
+  color: white;
+  padding: 5px 20px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #008cba;
+  font-size: 22px;
+  border-radius: 5%;
+  margin-bottom: 30px;
+}
+.btn:hover,
+:focus {
+  color: #008cba;
+  background-color: white;
+}
